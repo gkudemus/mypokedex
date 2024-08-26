@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { Pokemon } from '../types/Pokemon';
 import { fetchPokemonDetails } from '../services/pokemonService';
-import { Button } from '@chakra-ui/react';
 
 interface PokemonFormProps {
   isEditing: boolean;
