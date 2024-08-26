@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+Pokémon Application
+Overview
+This repository contains a React application for managing Pokémon data. The application includes components for listing Pokémon, viewing details, and adding or editing Pokémon. This README outlines recent updates made in the branch, which focus on the PokemonForm component and its testing.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Recent Updates
+PokemonForm Component
+The PokemonForm component has been updated to support both adding new Pokémon and editing existing ones. Key features include:
+
+Dynamic Form Fields: The form dynamically adjusts its fields based on whether it's for adding or editing a Pokémon.
+State Management: Utilizes local state to manage form inputs and updates.
+Data Fetching: Fetches existing Pokémon data when editing and no initial data is provided.
+
+Screens:
+![image](https://github.com/user-attachments/assets/8aeda6b4-20b8-4d2e-8ff8-3ec58cd105c5)
+
+![image](https://github.com/user-attachments/assets/735f59b6-bdcc-4d31-8304-00527892c8f2)
+
+![image](https://github.com/user-attachments/assets/4ed03647-7687-476c-9b3e-04cf49800bf5)
 
 ## Available Scripts
 
