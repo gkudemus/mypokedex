@@ -1,26 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { PokemonList } from './components/PokemonList';
+import { PokemonDetail } from './components/PokemonDetail';
+import { PokemonForm } from './components/PokemonForm';
+import { usePokemonContext } from './context/PokemonContext';
+import { Pokemon } from './types/Pokemon';
 
-function App() {
+const App: React.FC = () => {
+  const { addPokemon, updatePokemon } = usePokemonContext();
+
+  // Placeholder function to handle saving Pokémon
+  const handleSavePokemon = (pokemon: Pokemon) => {
+    if (pokemon.id === Date.now()) {
+      // Assume this ID indicates a new Pokémon
+      addPokemon(pokemon);
+    } else {
+      updatePokemon(pokemon);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      {/* Route for the Pokémon list */}
+      <Route path="/" element={<PokemonList />} />
+
+      {/* Route for viewing a specific Pokémon's details */}
+      <Route path="/pokemon/:id" element={<PokemonDetail />} />
+
+      {/* Route for creating a new Pokémon */}
+      <Route
+        path="/create"
+        element={<PokemonForm isEditing={false} initialPokemon={null} onSave={handleSavePokemon} />}
+      />
+
+      {/* Route for editing an existing Pokémon */}
+      <Route
+        path="/edit/:id"
+        element={<PokemonForm isEditing={true} initialPokemon={null} onSave={handleSavePokemon} />}
+      />
+    </Routes>
   );
-}
+};
 
 export default App;
