@@ -13,6 +13,7 @@ SearchBox added
 Add Pokemons
 Edit Pokemons
 Remove Pokemons
+Unit tests included
 
 Screens:
 ![image](https://github.com/user-attachments/assets/8aeda6b4-20b8-4d2e-8ff8-3ec58cd105c5)
