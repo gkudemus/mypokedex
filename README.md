@@ -21,6 +21,11 @@ Screens:
 
 ![image](https://github.com/user-attachments/assets/4ed03647-7687-476c-9b3e-04cf49800bf5)
 
+installation:
+
+1. after cloning the repository, do 'npm install'
+2. run npm start script to start the app
+
 ## Available Scripts
 
 In the project directory, you can run:
