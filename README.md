@@ -6,14 +6,14 @@ Recent Updates
 PokemonForm Component
 The PokemonForm component has been updated to support both adding new Pokémon and editing existing ones. Key features include:
 
-Dynamic Form Fields: The form dynamically adjusts its fields based on whether it's for adding or editing a Pokémon.
-State Management: Utilizes local state to manage form inputs and updates.
-Data Fetching: Fetches existing Pokémon data when editing and no initial data is provided.
-SearchBox added
-Add Pokemons
-Edit Pokemons
-Remove Pokemons
-Unit tests included
+1. Dynamic Form Fields: The form dynamically adjusts its fields based on whether it's for adding or editing a Pokémon.
+2. State Management: Utilizes local state to manage form inputs and updates.
+3. Data Fetching: Fetches existing Pokémon data when editing and no initial data is provided.
+4. SearchBox added
+5. Add Pokemons
+6. Edit Pokemons
+7. Remove Pokemons
+8. Unit tests included
 
 Screens:
 ![image](https://github.com/user-attachments/assets/8aeda6b4-20b8-4d2e-8ff8-3ec58cd105c5)
